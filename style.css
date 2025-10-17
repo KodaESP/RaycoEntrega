@@ -1,0 +1,132 @@
+/*
+Theme Name: Noticias Diego
+Theme URI: https://example.com/
+Author: Diego Domínguez Hernández
+Author URI: https://diego.com/
+Description: Tema de noticias para WordPress
+Version: 1.0
+License: Licencia
+License URI: URL 
+Text Domain: Noticias Diego
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+nav.main-menu {
+    margin-top: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.nav-menu li a:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main h3 {
+    margin-bottom: 5px;
+    color: #0073e6;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+footer nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav li a:hover {
+    color: #0073e6;
+}
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    footer nav li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 120px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main h3 {
+        font-size: 1.1rem;
+    }
+}
+
